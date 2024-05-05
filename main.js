@@ -211,6 +211,7 @@ document.addEventListener("DOMContentLoaded", function() {
             } else if (circle.classList.contains("circle9-position2") && circle.classList.contains("green-circle")) {
                 circle.style.marginLeft = "-20%";
                 circle.style.backgroundColor = "#88EE22";
+                
                 circle.style.color = "black";
             } else if (circle.classList.contains("cyan-circle")) {
                 circle.style.backgroundColor = "#00F0FF";
