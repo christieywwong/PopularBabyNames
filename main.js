@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    let circles = document.querySelectorAll(".cyan-circle, .white-circle, .green-circle, .orange-circle, .red-circle, .circle7");
+    let circles = document.querySelectorAll(".cyan-circle, .white-circle, .green-circle, .orange-circle, .red-circle, .circle7-position1, .circle9-position2");
 
     circles.forEach(function(circle) {
         let closeButton = circle.querySelector(".close-button");
@@ -192,37 +192,51 @@ document.addEventListener("DOMContentLoaded", function() {
             rank.classList.add("hidden");
 
             // Change circle background color to colored and text color to black
-            if (circle.classList.contains("cyan-circle")) {
+            if  (circle.classList.contains("circle7-position1")) {
+                circle.style.marginLeft = "-20%";
+                circle.style.backgroundColor = "white";
+                circle.style.color = "black";
+            } else if (circle.classList.contains("circle9-position2") && circle.classList.contains("red-circle")) {
+                circle.style.marginLeft = "-20%";
+                circle.style.backgroundColor = "#E14729";
+                circle.style.color = "black";
+            } else if (circle.classList.contains("circle9-position2") && circle.classList.contains("orange-circle")) {
+                circle.style.marginLeft = "-20%";
+                circle.style.backgroundColor = "#F37F26";
+                circle.style.color = "black";
+            } else if (circle.classList.contains("circle9-position2") && circle.classList.contains("cyan-circle")) {
+                circle.style.marginLeft = "-20%";
+                circle.style.backgroundColor = "#00F0FF";
+                circle.style.color = "black";
+            } else if (circle.classList.contains("circle9-position2") && circle.classList.contains("green-circle")) {
+                circle.style.marginLeft = "-20%";
+                circle.style.backgroundColor = "#88EE22";
+                circle.style.color = "black";
+            } else if (circle.classList.contains("cyan-circle")) {
                 circle.style.backgroundColor = "#00F0FF";
                 circle.style.color = "black"; 
             } else if (circle.classList.contains("green-circle")) {
                 circle.style.backgroundColor = "#88EE22";
                 circle.style.color = "black";
+                console.log("green");
             } else if (circle.classList.contains("orange-circle")) {
                 circle.style.backgroundColor = "#F37F26";
                 circle.style.color = "black";
+                console.log("orange");
             } else if (circle.classList.contains("red-circle")) {
                 circle.style.backgroundColor = "#E14729";
                 circle.style.color = "black";
-            } else if (circle.classList.contains("circle7")) {
-                circle.style.marginLeft = "-20%";
-            }  else {
+                console.log("red");
+            } else {
                 circle.style.backgroundColor = "white";
-                circle.style.color = "black";
-                // circle.style.marginLeft = "-20%";
+                circle.style.color = "black"
             }
 
-            
             circle.classList.add("expanded");
             circle.style.zIndex = "9";
 
 
-            // let circleRect = circle.getBoundingClientRect();
-            // if (circleRect.right > window.innerWidth) {
-            //     // circle.style.left = `75vw`;
-            //     circle.style.marginLeft = '-15vw'
-            // }
-
+    
             // Reset other circles to their original state
             circles.forEach(function(otherCircle) {
                 if (otherCircle !== circle) {
@@ -235,7 +249,26 @@ document.addEventListener("DOMContentLoaded", function() {
                     otherRank.classList.remove("hidden");
 
                     // Reset other circles' background color and text color
-                    if (otherCircle.classList.contains("cyan-circle")) {
+                    if (otherCircle.classList.contains("circle9-position2")) {
+                        otherCircle.style.marginLeft = "0";
+                        otherCircle.style.backgroundColor = "transparent";
+                        if (otherCircle.classList.contains("red-circle")) {
+                            otherCircle.style.color = "#E14729";
+                        }
+                        else if (otherCircle.classList.contains("orange-circle")) {
+                            otherCircle.style.color = "#F37F26";
+                        }
+                        else if (otherCircle.classList.contains("cyan-circle")) {
+                            otherCircle.style.color = "#00F0FF";
+                        }
+                        else {
+                            otherCircle.style.color = "88EE22";
+                        }
+                    } else if (otherCircle.classList.contains("circle7-position1")) {
+                        otherCircle.style.marginLeft = "0";
+                        otherCircle.style.backgroundColor = "transparent";
+                        otherCircle.style.color = "white";
+                    } else if (otherCircle.classList.contains("cyan-circle")) {
                         otherCircle.style.backgroundColor = "transparent";
                         otherCircle.style.color = "#00F0FF";
                     } else if (otherCircle.classList.contains("green-circle")) {
@@ -247,10 +280,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     } else if (otherCircle.classList.contains("red-circle")) {
                         otherCircle.style.backgroundColor = "transparent";
                         otherCircle.style.color = "#E14729";
-                    } else if (otherCircle.classList.contains("circle7")) {
-                        // otherCircle.style.color = "#E14729";
-                        otherCircle.style.marginLeft = "0";
-                    }else {
+                    } else {
                         otherCircle.style.backgroundColor = "transparent";
                         otherCircle.style.color = "white";
                     }
@@ -271,8 +301,34 @@ document.addEventListener("DOMContentLoaded", function() {
             content.classList.add("hidden");
             rank.classList.remove("hidden");
 
+            // Reset circle size
+            circle.classList.remove("expanded");
+
+            // Reset circle z-index
+            circle.style.zIndex = "1";
+
             // Reset circle background color and text color
-            if (circle.classList.contains("cyan-circle")) {
+            if (circle.classList.contains("circle9-position2") && circle.classList.contains("cyan-circle")) {
+            circle.style.marginLeft  = "0";
+            circle.style.backgroundColor = "black";
+            circle.style.color  = "#00F0FF";
+            } else if (circle.classList.contains("circle9-position2") && circle.classList.contains("red-circle")) {
+                circle.style.marginLeft  = "0";
+                circle.style.backgroundColor = "black";
+                circle.style.color  = "#E14729";
+            } else if (circle.classList.contains("circle9-position2") && circle.classList.contains("orange-circle")) {
+                circle.style.marginLeft  = "0";
+                circle.style.backgroundColor = "black";
+                circle.style.color  = "#F37F26";
+            } else if (circle.classList.contains("circle9-position2") && circle.classList.contains("green-circle")) {
+                circle.style.marginLeft  = "0";
+                circle.style.backgroundColor = "black";
+                circle.style.color  = "#88EE22";
+            } else if (circle.classList.contains("circle7-position1")) {
+                circle.style.marginLeft  = "0";
+                circle.style.backgroundColor = "black";
+                circle.style.color = "white";
+            } else if (circle.classList.contains("cyan-circle")) {
                 circle.style.backgroundColor = "black";
                 circle.style.color = "#00F0FF";
             } else if (circle.classList.contains("green-circle")) {
@@ -284,25 +340,12 @@ document.addEventListener("DOMContentLoaded", function() {
             } else if (circle.classList.contains("red-circle")) {
                 circle.style.backgroundColor = "black";
                 circle.style.color  = "#E14729";
-            } else if (circle.classList.contains("circle7")) {
-                circle.style.marginLeft  = "0";
-            }else {
+            } else {
                 circle.style.backgroundColor = "black";
                 circle.style.color = "white";
             }
 
-            // Reset circle size
-            circle.classList.remove("expanded");
-            
-            // Reset circle z-index
-            circle.style.zIndex = "1";
 
-            // Check if the circle's left margin is set to -10vw
-            let marginLeft = parseInt(circle.style.marginLeft) || 0;
-            if (marginLeft === -15) {
-            // Add 10vw to the left margin
-            circle.style.marginLeft = '0vw';
-            }
             
         });
     });
@@ -324,14 +367,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 // Reset circle background color and text color
                 circle.style.backgroundColor = "transparent";
-                if (circle.classList.contains("cyan-circle")) {
+                if (circle.classList.contains("circle7-position1")) {
+                    circle.style.marginLeft  = "0";
+                    circle.style.color = "white";
+                } else if (circle.classList.contains("circle9-position2") && circle.classList.contains("red-circle")) {
+                    circle.style.marginLeft  = "0";
+                    circle.style.color = "#E14729";
+                } else if (circle.classList.contains("circle9-position2") && circle.classList.contains("orange-circle")) {
+                    circle.style.marginLeft  = "0";
+                    circle.style.color = "#F37F26";
+                } else if (circle.classList.contains("circle9-position2") && circle.classList.contains("cyan-circle")) {
+                    circle.style.marginLeft  = "0";
                     circle.style.color = "#00F0FF";
+                } else if (circle.classList.contains("circle9-position2") && circle.classList.contains("green-circle")) {
+                    circle.style.marginLeft  = "0";
+                    circle.style.color = "#88EE22";
+                } else if (circle.classList.contains("cyan-circle")) {
+                    circle.style.color = "#00F0FF";
+                    console.log("spacce");
                 } else if (circle.classList.contains("green-circle")) {
                     circle.style.color = "#88EE22";
+                    console.log("spacce");
                 } else if (circle.classList.contains("orange-circle")) {
                     circle.style.color = "#F37F26";
+                    console.log("spacce");
                 } else if (circle.classList.contains("red-circle")) {
                     circle.style.color = "#E14729";
+                    console.log("spacce");
                 } else {
                     circle.style.color = "white";
                 }
@@ -341,12 +403,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 
                 // Reset circle z-index
                 circle.style.zIndex = "1";
-
-                let marginLeft = parseInt(circle.style.marginLeft) || 0;
-                if (marginLeft === -15) {
-                // Add 10vw to the left margin
-                circle.style.marginLeft = '0vw';
-                }
             }
         });
     });

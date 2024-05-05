@@ -415,7 +415,6 @@ p{
 }
 .orange-circle:hover {
   background-color: #F37F26;
-  /* opacity: 1; */
   color: black;
   z-index: 5;
 }
@@ -434,7 +433,6 @@ p{
 }
 .red-circle:hover {
   background-color: #E14729;
-  /* opacity: 1; */
   color: black;
   z-index: 5;
 }
