@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", function() {
             } else if (circle.classList.contains("circle9-position2") && circle.classList.contains("green-circle")) {
                 circle.style.marginLeft = "-20%";
                 circle.style.backgroundColor = "#88EE22";
-                
+
                 circle.style.color = "black";
             } else if (circle.classList.contains("cyan-circle")) {
                 circle.style.backgroundColor = "#00F0FF";
@@ -262,8 +262,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         else if (otherCircle.classList.contains("cyan-circle")) {
                             otherCircle.style.color = "#00F0FF";
                         }
-                        else {
-                            otherCircle.style.color = "88EE22";
+                        else if (otherCircle.classList.contains("green-circle")) {
+                            otherCircle.style.color = "#88EE22";
                         }
                     } else if (otherCircle.classList.contains("circle7-position1")) {
                         otherCircle.style.marginLeft = "0";
