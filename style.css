@@ -65,6 +65,9 @@ p{
 .cyanText{
   color: #00F0FF;
 }
+.whiteText{
+  color: white;
+}
 
 
 
@@ -270,8 +273,8 @@ p{
 }
 .filterButton{
   color:black;
-  background-color: white;
-  opacity: 0.6;
+  background-color: lightgrey;
+  opacity: 0.9;
   width: 10%;
   height:30px;
   border: none;
@@ -385,55 +388,48 @@ p{
   color: white;
 }
 .white-circle:hover {
-  background-color: white;
-  /* opacity: 1; */
-  color: black;
+  background-color: white!important;
+  color: black!important;
 }
 .yellow-circle{
   border: 2px solid #DFE138;
   color: #DFE138;
 }
 .yellow-circle:hover {
-  background-color: #DFE138;
-  /* opacity: 1; */
-  color: black;
+  background-color: #DFE138!important;
+  color: black!important;
 }
 .green-circle{
   border: 2px solid #88EE22;
   color: #88EE22;
 }
 .green-circle:hover {
-  background-color: #88EE22;
-  /* opacity: 1; */
-  color: black;
-  z-index: 5;
+  background-color: #88EE22!important;
+  color: black!important;
 }
 .orange-circle{
   border: 2px solid #F37F26;
   color: #F37F26;
 }
 .orange-circle:hover {
-  background-color: #F37F26;
-  color: black;
-  z-index: 5;
+  background-color: #F37F26!important;
+  color: black!important;
 }
 .cyan-circle{
   border: 2px solid #00F0FF;
   color: #00F0FF;
 }
 .cyan-circle:hover {
-  background-color: #00F0FF;
-  /* opacity: 1; */
-  color: black;
+  background-color: #00F0FF!important;
+  color: black!important;
 }
 .red-circle{
   border: 2px solid #E14729;
   color: #E14729;
 }
 .red-circle:hover {
-  background-color: #E14729;
-  color: black;
-  z-index: 5;
+  background-color: #E14729!important;
+  color: black!important;
 }
 
 
@@ -1677,8 +1673,8 @@ p{
   }
   .filterButton{
     color:black;
-    background-color: white;
-    opacity: 0.6;
+    background-color: lightgray;
+    opacity: 0.9;
     width: 10%;
     min-width: 18%;
     border: none;
