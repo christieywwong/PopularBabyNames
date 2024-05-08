@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let orangeButton = document.querySelectorAll(".orangeButton");
     let redButton = document.querySelectorAll(".redButton");
 
+
     cyanButton.forEach(function(button) {
         button.addEventListener("click", function() {
             cyanButton.forEach(function(btn) {
@@ -173,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    let circles = document.querySelectorAll(".cyan-circle, .white-circle, .green-circle, .orange-circle, .red-circle, .circle7-position1, .circle9-position2");
+    let circles = document.querySelectorAll(".cyan-circle, .white-circle, .green-circle, .orange-circle, .red-circle, .circle7-position1, .circle9-position2， .circle5-position2");
 
     circles.forEach(function(circle) {
         let closeButton = circle.querySelector(".close-button");
@@ -192,26 +193,38 @@ document.addEventListener("DOMContentLoaded", function() {
             rank.classList.add("hidden");
 
             // Change circle background color to colored and text color to black
-            if  (circle.classList.contains("circle7-position1")) {
-                circle.style.marginLeft = "-20%";
+            if (circle.classList.contains("circle7-position1")) {
+                if (window.innerWidth <= 700) {
+                    circle.style.marginLeft = "-0%";
+                } else {
+                    circle.style.marginLeft = "-17%";
+                }
                 circle.style.backgroundColor = "white";
                 circle.style.color = "black";
-            } else if (circle.classList.contains("circle9-position2") && circle.classList.contains("red-circle")) {
-                circle.style.marginLeft = "-20%";
-                circle.style.backgroundColor = "#E14729";
+            } else if (circle.classList.contains("circle9-position2")) {
+                if (window.innerWidth <= 700) {
+                    circle.style.marginLeft = "-0%";
+                } else {
+                    circle.style.marginLeft = "-17%";
+                }
+                if (circle.classList.contains("red-circle")) {
+                    circle.style.backgroundColor = "#E14729";
+                } else if (circle.classList.contains("orange-circle")) {
+                    circle.style.backgroundColor = "#F37F26";
+                } else if (circle.classList.contains("cyan-circle")) {
+                    circle.style.backgroundColor = "#00F0FF";
+                } else if (circle.classList.contains("green-circle")) {
+                    circle.style.backgroundColor = "#88EE22";
+                }
                 circle.style.color = "black";
-            } else if (circle.classList.contains("circle9-position2") && circle.classList.contains("orange-circle")) {
-                circle.style.marginLeft = "-20%";
-                circle.style.backgroundColor = "#F37F26";
-                circle.style.color = "black";
-            } else if (circle.classList.contains("circle9-position2") && circle.classList.contains("cyan-circle")) {
-                circle.style.marginLeft = "-20%";
-                circle.style.backgroundColor = "#00F0FF";
-                circle.style.color = "black";
-            } else if (circle.classList.contains("circle9-position2") && circle.classList.contains("green-circle")) {
-                circle.style.marginLeft = "-20%";
-                circle.style.backgroundColor = "#88EE22";
-
+            } else if (circle.classList.contains("circle5-position2")) {
+                
+                if (window.innerWidth <= 700) {
+                    circle.style.marginLeft = "-0%";
+                } else {
+                    circle.style.marginLeft = "-8%";
+                }
+                circle.style.backgroundColor = "white";
                 circle.style.color = "black";
             } else if (circle.classList.contains("cyan-circle")) {
                 circle.style.backgroundColor = "#00F0FF";
@@ -230,7 +243,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 console.log("red");
             } else {
                 circle.style.backgroundColor = "white";
-                circle.style.color = "black"
+                circle.style.color = "black";
             }
 
             circle.classList.add("expanded");
@@ -266,6 +279,10 @@ document.addEventListener("DOMContentLoaded", function() {
                             otherCircle.style.color = "#88EE22";
                         }
                     } else if (otherCircle.classList.contains("circle7-position1")) {
+                        otherCircle.style.marginLeft = "0";
+                        otherCircle.style.backgroundColor = "transparent";
+                        otherCircle.style.color = "white";
+                    } else if (otherCircle.classList.contains("circle5-position2")) {
                         otherCircle.style.marginLeft = "0";
                         otherCircle.style.backgroundColor = "transparent";
                         otherCircle.style.color = "white";
@@ -329,6 +346,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 circle.style.marginLeft  = "0";
                 circle.style.backgroundColor = "black";
                 circle.style.color = "white";
+            } else if (circle.classList.contains("circle5-position2")) {
+                circle.style.marginLeft  = "0";
+                circle.style.backgroundColor = "black";
+                circle.style.color = "white";
             } else if (circle.classList.contains("cyan-circle")) {
                 circle.style.backgroundColor = "black";
                 circle.style.color = "#00F0FF";
@@ -369,6 +390,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Reset circle background color and text color
                 circle.style.backgroundColor = "transparent";
                 if (circle.classList.contains("circle7-position1")) {
+                    circle.style.marginLeft  = "0";
+                    circle.style.color = "white";
+                } else if (circle.classList.contains("circle5-position2")) {
                     circle.style.marginLeft  = "0";
                     circle.style.color = "white";
                 } else if (circle.classList.contains("circle9-position2") && circle.classList.contains("red-circle")) {
