@@ -1758,6 +1758,9 @@ p{
   .cyanButtonClicked {
     background-color: #E14729;
   }
+  .filterButton{
+    min-width: 28%;
+  }
 }
 
 
@@ -1879,6 +1882,9 @@ p{
     max-height: 64vw;
     max-width: 64vw;
     left: 20%;
+  }
+  .filterButton{
+    min-width: 28%;
   }
 }
 
@@ -2032,6 +2038,9 @@ p{
   .circle9 h4,
   .circle10 h4{
     font-size: 15px;
+  }
+  .filterButton{
+    min-width: 28%;
   }
 }
 
