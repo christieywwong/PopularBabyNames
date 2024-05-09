@@ -125,6 +125,23 @@ p{
   background-color: #DFE138;
 }
 
+@media screen and (min-width: 2000px) {
+  .filter-circle{
+    min-width: 400px;
+    min-height: 400px;
+  }
+  .filter-page-row h3{
+    font-size: 40px;
+  }
+  .filterpage-title h1{
+    font-size: 120px;
+    line-height: 120px;
+  }
+  .ethnicity-title h1{
+    font-size: 120px;
+    line-height: 120px;
+  }
+}
 @media screen and (max-width: 1100px) {
   .ethnicity-filter-bar{
     flex-direction: column;
@@ -142,20 +159,32 @@ p{
     font-size: 50px;
     line-height: 50px;
   }
-  .ethnicity-title h3{
-    font-size: 22px;
-    line-height: 22px;
+  .ethnicity-title h1{
+    font-size: 50px;
+    line-height: 50px;
   }
   .ethnicity-filter-bar{
     flex-direction: column;
   }
 }
-/* @media screen and (max-width: 400px) {
-
-  .filterpage-title h1{
-    color: #138ECE;
+@media screen and (max-width: 600px) {
+  .filter-circle{
+    min-width: 180px;
+    min-height: 180px;
   }
-} */
+  .filter-page-row h3{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .filter-circle{
+    min-width: 150px;
+    min-height: 150px;
+  }
+  .filter-page-row h3{
+    font-size: 18px;
+  }
+}
 
 
 /********Title************/
@@ -1662,14 +1691,6 @@ p{
   .filter-bar{
     flex-wrap: wrap;
     justify-content:start;
-    bottom:2vh;
-    margin:0px;
-    margin-left:1vw;
-    margin-right:1vw;
-    left:0px;
-    right:0px;
-    padding:0px 10px 0px;
-    z-index: 10;
     gap: 10px;
   }
   .filterButton{
@@ -1964,9 +1985,204 @@ p{
     max-width: 64vw;
     left: 20%;
   }
+  .circle1 h2,
+  .circle2 h2,
+  .circle3 h2,
+  .circle4 h2,
+  .circle5 h2,
+  .circle6 h2,
+  .circle7 h2,
+  .circle8 h2,
+  .circle9 h2,
+  .circle10 h2{
+    font-size: 28px;
+  }
+  .circle1 h3,
+  .circle2 h3,
+  .circle3 h3,
+  .circle4 h3,
+  .circle5 h3,
+  .circle6 h3,
+  .circle7 h3,
+  .circle8 h3,
+  .circle9 h3,
+  .circle10 h3{
+    font-size: 28px;
+  }
+  .circle1 h4,
+  .circle2 h4,
+  .circle3 h4,
+  .circle4 h4,
+  .circle5 h4,
+  .circle6 h4,
+  .circle7 h4,
+  .circle8 h4,
+  .circle9 h4,
+  .circle10 h4{
+    font-size: 15px;
+  }
 }
 
+@media screen and (max-width: 440px) {
+  .unknown-circle{
+    border: 1.5px solid green;
+    color: blue;
+  }
+  .bar h5{
+    font-size:15px;
+  }
+  .box{
+    height: 10px;
+    width: 10px;
+  }
+  .title{
+    margin-top: 2%;
+  }
+  .title h1{
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .circle1-position1{
+    position: absolute;
+    top: 530px;
+    left: 44vw;
+  }
+  .circle2-position1{
+    position: absolute;
+    top: 960px;
+    left: 36vw;
+  }
+  .circle3-position1{
+    position: absolute;
+    top: 800px;
+    left: -10vw;
+  }
+  .circle4-position1{
+    position: absolute;
+    top: 1060px;
+    left: -15vw;
+  }
+  .circle5-position1{
+    position: absolute;
+    top: 1300px;
+    left: -15vw;
+  }
+  .circle6-position1{
+    position: absolute;
+    top: 610px;
+    left: 1.5vw;
+  }
+  .circle7-position1{
+    position: absolute;
+    top: 820px;
+    left: 74vw;
+  }
+  .circle8-position1{
+    position: absolute;
+    top: 460px;
+    left: 22vw;
+  }
+  .circle9-position1{
+    position: absolute;
+    top: 820px;
+    left: 46vw;
+  }
+  .circle10-position1{
+    position: absolute;
+    top: 520px;
+    left: 0vw;
+  }
 
+  .circle1-position2{
+    position: absolute;
+    top: 1290px;
+    left: 33vw;
+  }
+  .circle2-position2{
+    position: absolute;
+    top: 1510px;
+    left: -11vw;
+  }
+  .circle3-position2{
+    position: absolute;
+    top: 1770px;
+    left: 17vw;
+  }
+  .circle4-position2{
+    position: absolute;
+    top: 1585px;
+    left: 55vw;
+  }
+  .circle5-position2{
+    position: absolute;
+    top: 1990px;
+    left: 53vw;
+  }
+  .circle6-position2{
+    position: absolute;
+    top: 1995px;
+    left: -4vw;
+  }
+  .circle7-position2{
+    position: absolute;
+    top: 1810px;
+    left: 75vw;
+  }
+  .circle8-position2{
+    position: absolute;
+    top: 1770px;
+    left: -14vw;
+  }
+  .circle9-position2{
+    position: absolute;
+    top: 1200px;
+    left: 80vw;
+  }
+  .circle10-position2{
+    position: absolute;
+    top: 1210px;
+    left: 33vw;
+  }
+  .filterButton{
+    min-width: 16%;
+  }
+  .circle1 h2,
+  .circle2 h2,
+  .circle3 h2,
+  .circle4 h2,
+  .circle5 h2,
+  .circle6 h2,
+  .circle7 h2,
+  .circle8 h2,
+  .circle9 h2,
+  .circle10 h2{
+    font-size: 24px;
+  }
+  .circle1 h3,
+  .circle2 h3,
+  .circle3 h3,
+  .circle4 h3,
+  .circle5 h3,
+  .circle6 h3,
+  .circle7 h3,
+  .circle8 h3,
+  .circle9 h3,
+  .circle10 h3{
+    font-size: 24px;
+  }
+  .circle1 h4,
+  .circle2 h4,
+  .circle3 h4,
+  .circle4 h4,
+  .circle5 h4,
+  .circle6 h4,
+  .circle7 h4,
+  .circle8 h4,
+  .circle9 h4,
+  .circle10 h4{
+    font-size: 15px;
+  }
+}
 .fade-in {
   animation: fadeIn 2s ease forwards;
 }
