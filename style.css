@@ -1805,14 +1805,14 @@ p{
   .filter-bar{
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
   }
   .filterButton{
     color:black;
     background-color: lightgray;
     opacity: 0.9;
     width: 10%;
-    min-width: 17%;
+    min-width: 16%;
     border: none;
     padding-top:4px
   }
@@ -1876,7 +1876,7 @@ p{
     background-color: #00F0FF;
   }
   .filterButton{
-    min-width: 15%;
+    min-width: 16%;
   }
 }
 
@@ -2001,7 +2001,7 @@ p{
     left: 20%;
   }
   .filterButton{
-    min-width: 15%;
+    min-width: 16%;
   }
 }
 
@@ -2157,7 +2157,7 @@ p{
     font-size: 15px;
   }
   .filterButton{
-    min-width: 15%;
+    min-width: 16%;
   }
   .filter-bar h4{
     font-size: 16px;
@@ -2285,7 +2285,7 @@ p{
     left: 33vw;
   }
   .filterButton{
-    min-width: 15%;
+    min-width: 16%;
   }
   .circle1 h2,
   .circle2 h2,
