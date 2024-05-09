@@ -758,8 +758,114 @@ p{
 
 
 
+@media screen and (min-width: 1800px) {
+  .unknown-circle{
+    border: 2px solid blue;
+    color: blue;
+  }
+  .circle1-position1{
+    position: absolute;
+    top: 680px;
+    left: 33vw;
+  }
+  .circle2-position1{
+    position: absolute;
+    top: 530px;
+    left: 4vw;
+  }
+  .circle3-position1{
+    position: absolute;
+    top: 520px;
+    left: 65vw;
+  }
+  .circle4-position1{
+    position: absolute;
+    top: 1025px;
+    left: 63vw;
+  }
+  .circle5-position1{
+    position: absolute;
+    top: 1080px;
+    left: 15vw;
+  }
+  .circle6-position1{
+    position: absolute;
+    top: 1030px;
+    left: -3vw;
+  }
+  .circle7-position1{
+    position: absolute;
+    top: 925px;
+    left: 86vw;
+  }
+  .circle8-position1{
+    position: absolute;
+    top: 460px;
+    left: 31.5vw;
+  }
+  .circle9-position1{
+    position: absolute;
+    top: 490px;
+    left: 54vw;
+  }
+  .circle10-position1{
+    position: absolute;
+    top: 440px;
+    left: 3vw;
+  }
+  .circle1-position2{
+    position: absolute;
+    top: 1300px;
+    left: 35vw;
+  }
+  .circle2-position2{
+    position: absolute;
+    top: 1470px;
+    left: 4.5vw;
+  }
+  .circle3-position2{
+    position: absolute;
+    top: 1460px;
+    left: 68vw;
+  }
+  .circle4-position2{
+    position: absolute;
+    top: 1875px;
+    left: 51.5vw;
+  }
+  .circle5-position2{
+    position: absolute;
+    top: 1950px;
+    left: 77vw;
+  }
+  .circle6-position2{
+    position: absolute;
+    top: 1860px;
+    left: 30vw;
+  }
+  .circle7-position2{
+    position: absolute;
+    top: 2020px;
+    left: 15vw;
+  }
+  .circle8-position2{
+    position: absolute;
+    top: 1960px;
+    left: 0.5vw;
+  }
+  .circle9-position2{
+    position: absolute;
+    top: 1245px;
+    left: 87vw;
+  }
+  .circle10-position2{
+    position: absolute;
+    top: 1360px;
+    left: 5vw;
+  }
+}
 
-
+/* ------------------------------------------------------------------------ */
 @media screen and (max-width: 1500px) {
   .unknown-circle{
     border: 2px solid blue;
@@ -1698,7 +1804,7 @@ p{
     background-color: lightgray;
     opacity: 0.9;
     width: 10%;
-    min-width: 19%;
+    min-width: 17%;
     border: none;
     padding-top:4px
   }
@@ -1762,7 +1868,7 @@ p{
     background-color: #00F0FF;
   }
   .filterButton{
-    min-width: 16.5%;
+    min-width: 15%;
   }
 }
 
@@ -1887,7 +1993,7 @@ p{
     left: 20%;
   }
   .filterButton{
-    min-width: 16.5%;
+    min-width: 15%;
   }
 }
 
@@ -2043,7 +2149,7 @@ p{
     font-size: 15px;
   }
   .filterButton{
-    min-width: 16.5%;
+    min-width: 15%;
   }
   .filter-bar h4{
     font-size: 16px;
@@ -2171,7 +2277,7 @@ p{
     left: 33vw;
   }
   .filterButton{
-    min-width: 16.5%;
+    min-width: 15%;
   }
   .circle1 h2,
   .circle2 h2,
