@@ -1759,7 +1759,7 @@ p{
     background-color: #00F0FF;
   }
   .filterButton{
-    min-width: 28%;
+    min-width: 16.5%;
   }
 }
 
@@ -1884,7 +1884,7 @@ p{
     left: 20%;
   }
   .filterButton{
-    min-width: 28%;
+    min-width: 16.5%;
   }
 }
 
@@ -2040,7 +2040,7 @@ p{
     font-size: 15px;
   }
   .filterButton{
-    min-width: 28%;
+    min-width: 16.5%;
   }
 }
 
@@ -2165,7 +2165,7 @@ p{
     left: 33vw;
   }
   .filterButton{
-    min-width: 28%;
+    min-width: 16.5%;
   }
   .circle1 h2,
   .circle2 h2,
