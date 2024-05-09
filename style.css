@@ -1094,7 +1094,7 @@ p{
     width: 15px;
   }
   .filter-bar h4{
-    font-size:20px;
+    font-size: 20px;
   }
   .filterButton{
     width: 10%;
@@ -1746,6 +1746,9 @@ p{
   .circle10 h4{
     font-size: 25px;
   }
+  .filter-bar h4{
+    font-size: 18px;
+  }
   .redButtonClicked {
     background-color: #E14729;
   }
@@ -2042,6 +2045,9 @@ p{
   .filterButton{
     min-width: 16.5%;
   }
+  .filter-bar h4{
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -2210,6 +2216,9 @@ p{
     max-height: 64vw;
     max-width: 64vw;
     left: 20%;
+  }
+  .filter-bar h4{
+    font-size: 12px;
   }
 }
 .fade-in {
