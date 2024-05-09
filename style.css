@@ -1746,6 +1746,18 @@ p{
   .circle10 h4{
     font-size: 25px;
   }
+  .redButtonClicked {
+    background-color: #E14729;
+  }
+  .greenButtonClicked {
+    background-color: #E14729;
+  }
+  .orangeButtonClicked {
+    background-color: #E14729;
+  }
+  .cyanButtonClicked {
+    background-color: #E14729;
+  }
 }
 
 
