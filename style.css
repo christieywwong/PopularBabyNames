@@ -1690,7 +1690,7 @@ p{
   }
   .filter-bar{
     flex-wrap: wrap;
-    justify-content:start;
+    justify-content: center;
     gap: 10px;
   }
   .filterButton{
@@ -1698,7 +1698,7 @@ p{
     background-color: lightgray;
     opacity: 0.9;
     width: 10%;
-    min-width: 18%;
+    min-width: 19%;
     border: none;
     padding-top:4px
   }
