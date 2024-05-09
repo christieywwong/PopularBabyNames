@@ -257,7 +257,7 @@ p{
 .row{
   display: flex;
   flex-direction:row;
-  gap: 6px;
+  gap: 10px;
 }
 .box{
   height: 20px;
