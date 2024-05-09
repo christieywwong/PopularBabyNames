@@ -2182,6 +2182,14 @@ p{
   .circle10 h4{
     font-size: 15px;
   }
+  .expanded{
+    transform: scale(1.5);
+    min-height: 64vw;
+    min-width: 64vw;
+    max-height: 64vw;
+    max-width: 64vw;
+    left: 20%;
+  }
 }
 .fade-in {
   animation: fadeIn 2s ease forwards;
