@@ -2286,6 +2286,8 @@ p{
   }
   .filterButton{
     min-width: 16%;
+    height: 1px;
+    padding-top:2px;
   }
   .circle1 h2,
   .circle2 h2,
